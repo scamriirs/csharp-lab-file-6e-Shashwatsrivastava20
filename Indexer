@@ -1,0 +1,22 @@
+using system;
+public class MyClass
+{
+    private string[] _data = new string[10];
+
+    public string this[int index]
+    {
+        get { return _data[index]; }
+        set { _data[index] = value; }
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        MyClass obj = new MyClass();
+        obj[0] = "Hello";
+        Console.WriteLine(obj[0]);
+    }
+}
+
